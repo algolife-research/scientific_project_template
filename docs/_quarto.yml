@@ -18,7 +18,6 @@ book:
   title: "My Experiment"
   author: "Your Name"
   date: today
-
   chapters:
     - index.md
     - part: "General Context"
@@ -31,3 +30,8 @@ book:
         - report/Methods.md
         - report/Results.md
         - report/Discussion.md
+    
+    - references.qmd
+
+bibliography: references.bib
+csl: https://www.zotero.org/styles/nature
