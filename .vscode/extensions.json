@@ -13,5 +13,9 @@
         // Dev Containers / Remote - Containers support
         "ms-vscode-remote.remote-containers",
         "ms-vscode-remote.vscode-remote-extensionpack",
+        // GitHub Copilot extensions
+        "ms-vscode.vscode-websearchforcopilot",
+        "github.copilot",
+        "github.copilot-chat"
     ]
 }
