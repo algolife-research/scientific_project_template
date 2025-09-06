@@ -1,0 +1,17 @@
+{
+    // List of extensions which are recommended for users of this workspace.
+    "recommendations": [
+        // R support
+        "reditorsupport.r",
+        // Python support
+        "ms-python.python",
+        "ms-toolsai.jupyter",
+        // Quarto documents
+        "quarto.quarto",
+        // PDF preview
+        "tomoki1207.pdf",
+        // Dev Containers / Remote - Containers support
+        "ms-vscode-remote.remote-containers",
+        "ms-vscode-remote.vscode-remote-extensionpack",
+    ]
+}
