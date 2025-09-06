@@ -1,0 +1,33 @@
+project:
+  type: book
+  output-dir: _output
+
+format:
+  html:
+    toc: true
+    number-sections: true
+    theme: cosmo
+  pdf:
+    toc: true
+    number-sections: true
+    pdf-engine: xelatex
+    keep-tex: false
+    geometry: margin=2.5cm
+    
+book:
+  title: "My Experiment"
+  author: "Your Name"
+  date: today
+
+  chapters:
+    - index.md
+    - part: "General Context"
+      chapters:
+        - context/Scientific_Context.md
+        - context/Protocol.md
+
+    - part: "Study Report"
+      chapters:
+        - report/Methods.md
+        - report/Results.md
+        - report/Discussion.md
