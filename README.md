@@ -1,7 +1,7 @@
 
 # Scientific Project Template for Honest Science
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](./LICENSE)
 
 This repository provides a template for initializing a scientific project based on honest science principles. It includes a containerized development environment, integrated documentation workflow, and organized structure for reproducible research.
 
@@ -10,8 +10,8 @@ This repository provides a template for initializing a scientific project based 
 - `code/` - Source code and scripts for your analyses
 - `data/` - Raw and processed data files  
 - `docs/` - Documentation, protocols, and integrated reports (Quarto-based)
-  - `context/` - Scientific context and protocol files
-  - `report/` - Generated reports and manuscripts
+  - `design/` - Scientific context and protocol files
+  - `manuscript/` - Generated reports and manuscripts
 - `results/` - Output results, figures, and tables
 - `.devcontainer/` - VS Code development container configuration
 - `Dockerfile` - Container setup with Python, R, Quarto, and scientific tools

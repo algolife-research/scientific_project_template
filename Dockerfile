@@ -9,12 +9,22 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
         python3-pip \
         python3-venv \
         r-base \
+        r-base-dev \
+        libcurl4-openssl-dev \
+        libxml2-dev \
+        libssl-dev \
+        libfontconfig1-dev \
+        libharfbuzz-dev \
+        libfribidi-dev \
+        libfreetype6-dev \
+        libpng-dev \
+        libtiff5-dev \
+        libjpeg-dev \
         curl \
         bash \
         build-essential \
         libstdc++6 \
         libffi-dev \
-        libssl-dev \
         ca-certificates \
         pandoc \
         unzip \
@@ -39,6 +49,9 @@ RUN python3 -m venv /opt/venv && \
     # ensure venv binaries are on PATH for later image usage
     ln -s /opt/venv/bin/python /usr/local/bin/python3-venv || true && \
     ln -s /opt/venv/bin/pip /usr/local/bin/pip3-venv || true
+
+# Install core R packages for scientific computing
+RUN R -e "install.packages(c('tidyverse', 'ggplot2', 'dplyr', 'readr', 'tidyr', 'stringr', 'lubridate', 'knitr', 'rmarkdown', 'devtools', 'remotes'), repos='https://cloud.r-project.org/')"
 
 ENV PATH="/opt/venv/bin:${PATH}"
 
