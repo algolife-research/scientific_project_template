@@ -1,8 +1,4 @@
----
-title: "References"
----
-
-# References
+# References {-}
 
 ::: {#refs}
 :::

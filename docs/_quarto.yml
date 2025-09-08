@@ -20,17 +20,18 @@ book:
   date: today
   chapters:
     - index.md
-    - part: "General Context"
+    - part: "Study Design"
       chapters:
-        - context/Scientific_Context.md
-        - context/Protocol.md
+        - design/Scientific_Context.md
+        - design/Protocol.md
 
-    - part: "Study Report"
+    - part: "Manuscript"
       chapters:
-        - report/Methods.md
-        - report/Results.md
-        - report/Discussion.md
-    
+        - manuscript/Introduction.md
+        - manuscript/Methods.md
+        - manuscript/Results.md
+        - manuscript/Discussion.md
+
     - references.qmd
 
 bibliography: references.bib
