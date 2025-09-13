@@ -1,11 +1,9 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the
 // README at: https://github.com/devcontainers/templates/tree/main/src/alpine
 {
-	"name": "Honest Science - Alpine",
-	// Use a custom Dockerfile for the dev container
-	"build": {
-		"dockerfile": "../Dockerfile"
-	}
+	"name": "Honest Science - Core R Latest",
+	// Use the pre-built container image
+	"image": "ghcr.io/algolife-research/honest_science:core-r-latest"
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
