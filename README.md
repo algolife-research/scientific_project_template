@@ -42,18 +42,32 @@ This template uses **VS Code development containers** for a consistent, reproduc
 
 ## Documentation Workflow
 
-The `docs/` folder contains a Quarto-based system for creating integrated scientific documents:
+The project includes two Quarto-based article systems for creating integrated scientific documents:
 
-- **Protocols**: Store in `docs/context/Protocol.md`
-- **Scientific context**: Store in `docs/context/Scientific_Context.md` 
+- **Pre-registration** (`pre_registration/`): Protocol registration and study design documentation
+- **Manuscript** (`manuscript/`): Full research manuscript with IMRAD structure
 
-- **Compile to PDF/HTML**:
-  ```sh
-  quarto render docs/ --to pdf
-  quarto render docs/ --to html
-  ```
+### Rendering Documentation
 
-See `docs/README.md` for detailed compilation instructions.
+From each subdirectory, run:
+
+```sh
+# Pre-registration article
+cd pre_registration
+quarto render    # build all formats (HTML + PDF)
+quarto render --to html   # build HTML only
+quarto render --to pdf    # build PDF only (requires LaTeX)
+quarto preview   # live preview during development
+
+# Manuscript article  
+cd manuscript
+quarto render    # build all formats (HTML + PDF)
+quarto render --to html   # build HTML only
+quarto render --to pdf    # build PDF only (requires LaTeX)
+quarto preview   # live preview during development
+```
+
+See the individual README files in each folder for detailed compilation instructions.
 
 ## License
 

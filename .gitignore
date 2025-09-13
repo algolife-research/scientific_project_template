@@ -1,2 +1,6 @@
-/docs/_output
-/docs/.quarto
+/manuscript/_output
+/manuscript/.quarto
+/pre_registration/_output
+/pre_registration/.quarto
+/references/papers/*
+!/references/papers/README.md

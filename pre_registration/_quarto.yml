@@ -1,0 +1,26 @@
+project:
+  type: book
+  output-dir: _output
+
+book:
+  title: "Pre-registration Protocol"
+  chapters:
+    - index.md
+    - docs/Scientific_Context.md
+    - docs/Protocol.md
+    - docs/References.qmd
+
+format:
+  html:
+    toc: true
+    number-sections: true
+    theme: cosmo
+  pdf:
+    toc: true
+    number-sections: true
+    pdf-engine: xelatex
+    keep-tex: false
+    geometry: margin=2.5cm
+
+bibliography: ../references/references.bib
+csl: https://www.zotero.org/styles/nature
